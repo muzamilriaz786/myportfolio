@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+  }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}   
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix for Three.js canvas */
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
