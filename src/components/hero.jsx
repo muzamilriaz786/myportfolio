@@ -115,7 +115,14 @@ const HeroSection = () => {
           >
             <div className="relative w-full max-w-md">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white dark:border-gray-800 aspect-square bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                {profileImage}
+                <motion.img
+                  src={profileImage}
+                  alt="profile Image"
+                  className="w-full h-full object-cover"
+                  initial={{ opacity: 0, scale: 1.1 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                />
               </div>
 
               {/* Decorative elements */}

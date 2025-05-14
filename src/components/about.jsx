@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail, FiDownload } from "react-icons/fi";
 import { SiLeetcode, SiCodepen } from "react-icons/si";
+import profileImage from "../assets/images/1736217507441.jpeg";
 
 const About = () => {
   const fadeIn = {
@@ -67,7 +68,14 @@ const About = () => {
             <div className="relative bottom-18 w-200 h-150 md:w-100 md:h-100 rounded-2xl overflow-hidden shadow-xl border-4 border-white dark:border-gray-800">
               <div className="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
                 <span className="text-gray-500 dark:text-gray-400">
-                  <img src="../assets/images/1736217507441.jpeg" alt="" />
+                   <motion.img
+                                   src={profileImage}
+                                   alt="profile Image"
+                                   className="w-full h-full object-cover"
+                                   initial={{ opacity: 0, scale: 1.1 }}
+                                   animate={{ opacity: 1, scale: 1 }}
+                                   transition={{ duration: 0.5 }}
+                    />
                 </span>
               </div>
            
