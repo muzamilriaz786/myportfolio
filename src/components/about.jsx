@@ -67,7 +67,7 @@ const About = () => {
             <div className="relative bottom-18 w-200 h-150 md:w-100 md:h-100 rounded-2xl overflow-hidden shadow-xl border-4 border-white dark:border-gray-800">
               <div className="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
                 <span className="text-gray-500 dark:text-gray-400">
-                  <img src="/public/1736217507441.jpeg" alt="" />
+                  <img src="../assets/images/1736217507441.jpeg" alt="" />
                 </span>
               </div>
            

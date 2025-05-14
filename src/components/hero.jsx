@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { FiArrowRight, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
+import profileImage from "../assets/images/1736217507441.jpeg";
+
 const HeroSection = () => {
   const fadeIn = {
     hidden: { opacity: 0 },
@@ -113,7 +115,7 @@ const HeroSection = () => {
           >
             <div className="relative w-full max-w-md">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white dark:border-gray-800 aspect-square bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                <img src="/public/1736217507441.jpeg" alt="" />
+                {profileImage}
               </div>
 
               {/* Decorative elements */}
