@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0) translateX(0);
@@ -22,7 +24,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+html.dark{
+  
+}
 /* Fix for Three.js canvas */
 canvas {
   display: block;

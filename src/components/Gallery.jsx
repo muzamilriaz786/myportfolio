@@ -15,7 +15,6 @@ const ProjectsSection = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
 
   const projects = [
-    
     {
       id: 1,
       title: "Portfolio Website",
@@ -25,8 +24,8 @@ const ProjectsSection = () => {
       category: "frontend",
       image: portfolioImg,
       links: {
-        live: "#",
-        code: "#",
+        code: "https://github.com/muzamilriaz786/myportfolio",
+        live: "https://myportfolio-nine-rho-71.vercel.app/",
       },
     },
   ];
@@ -205,7 +204,7 @@ const ProjectsSection = () => {
                       {project.links.live && (
                         <motion.a
                           href={project.links.live}
-                          className="text-sm text-primary-600 dark:text-primary-400 hover:underline flex items-center"
+                          className="text-sm text-primary-600 dark:text-gray-100 hover:underline flex items-center"
                           whileHover={{ x: 3 }}
                         >
                           <FiExternalLink className="mr-1" /> Live Demo

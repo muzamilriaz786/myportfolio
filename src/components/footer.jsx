@@ -81,15 +81,7 @@ const Footer = () => {
                   <FiArrowUp className="rotate-90 mr-2" /> Projects
                 </motion.a>
               </li>
-              <li>
-                <motion.a
-                  whileHover={{ x: 5 }}
-                  href="#contact"
-                  className="flex items-center text-gray-400 hover:text-white transition-colors"
-                >
-                  <FiArrowUp className="rotate-90 mr-2" /> Contact
-                </motion.a>
-              </li>
+         
             </ul>
           </div>
 
@@ -147,7 +139,7 @@ const Footer = () => {
                 <div className="flex space-x-3">
                   <motion.a
                     whileHover={{ y: -3 }}
-                    href="https://dev.to/yourusername"
+                    href="https://dev.to/muzammilriaz"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"
@@ -157,7 +149,7 @@ const Footer = () => {
                   </motion.a>
                   <motion.a
                     whileHover={{ y: -3 }}
-                    href="https://hashnode.com/@yourusername"
+                    href="https://hashnode.com/@MuzammilRiaz"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-white transition-colors"

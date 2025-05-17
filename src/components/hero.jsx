@@ -23,7 +23,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-700 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-10 dark:opacity-5">
@@ -43,7 +43,7 @@ const HeroSection = () => {
           {/* Left content */}
           <div className="md:w-1/2 space-y-8">
             <motion.div variants={slideUp}>
-              <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-primary-100 text-primary-800 dark:bg-primary-900/50 dark:text-primary-300">
+              <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-primary-100 text-primary-800 dark:bg-primary-900/50 dark:text-white">
                 Full Stack Developer
               </span>
             </motion.div>
@@ -75,12 +75,18 @@ const HeroSection = () => {
             </motion.p>
 
             <motion.div variants={slideUp} className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-gray-700 font-medium rounded-lg transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-primary-500/20 flex items-center gap-2">
+              <a
+                href="#projects"
+                className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-gray-700 font-medium rounded-lg transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-primary-500/20 flex items-center gap-2"
+              >
                 View My Work <FiArrowRight className="w-4 h-4" />
-              </button>
-              <button className="px-6 py-3 border border-gray-300 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-400 text-gray-700 dark:text-gray-300 font-medium rounded-lg transition-all hover:text-primary-600 dark:hover:text-primary-400 flex items-center gap-2">
+              </a>
+              <a
+                href="/src/assets/images/muzammil-cv.pdf"
+                className="px-6 py-3 border border-gray-300 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-400 text-gray-700 dark:text-gray-300 font-medium rounded-lg transition-all hover:text-primary-600 dark:hover:text-primary-400 flex items-center gap-2"
+              >
                 Download CV
-              </button>
+              </a>
             </motion.div>
 
             <motion.div variants={fadeIn} className="flex gap-4 pt-4">

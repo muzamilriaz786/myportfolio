@@ -35,7 +35,6 @@ function Navbar() {
     { label: "Projects", path: "#projects" },
     { label: "About us", path: "#about" },
   ];
-  
 
   return (
     <header className="sticky top-0 z-50 shadow-md dark:shadow-gray-800 backdrop-blur-md bg-white/80 dark:bg-gray-900/80">

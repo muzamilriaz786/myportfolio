@@ -47,6 +47,7 @@ const About = () => {
       variants={fadeIn}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <motion.div variants={slideUp} className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 text-sm font-medium rounded-full bg-primary-100 text-primary-800 dark:bg-primary-900/50 dark:text-primary-300 mb-4">
             About Me
@@ -54,7 +55,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Crafting Digital Experiences
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             I build exceptional and accessible digital experiences for the web.
           </p>
         </motion.div>
@@ -65,39 +66,36 @@ const About = () => {
             variants={slideUp}
             className="flex justify-center lg:justify-end"
           >
-            <div className="relative bottom-18 w-200 h-150 md:w-100 md:h-100 rounded-2xl overflow-hidden shadow-xl border-4 border-white dark:border-gray-800">
+            <div className="w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-xl border-4 border-white dark:border-gray-800">
               <div className="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-                <span className="text-gray-500 dark:text-gray-400">
-                   <motion.img
-                                   src={profileImage}
-                                   alt="profile Image"
-                                   className="w-full h-full object-cover"
-                                   initial={{ opacity: 0, scale: 1.1 }}
-                                   animate={{ opacity: 1, scale: 1 }}
-                                   transition={{ duration: 0.5 }}
-                    />
-                </span>
+                <motion.img
+                  src={profileImage}
+                  alt="profile"
+                  className="w-full h-full object-cover"
+                  initial={{ opacity: 0, scale: 1.1 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                />
               </div>
-           
             </div>
           </motion.div>
 
           {/* About Content */}
           <motion.div variants={fadeIn} className="space-y-6">
             <motion.div variants={slideUp}>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 Hi, I'm{" "}
                 <span className="text-primary-600 dark:text-primary-400">
-                Muzammil Riaz
+                  Muzammil Riaz
                 </span>
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
                 I'm a full-stack developer with a passion for creating
                 beautiful, functional, and user-centered digital experiences.
                 With over 5 years of experience, I've worked with startups and
                 established companies to bring their ideas to life.
               </p>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300">
                 When I'm not coding, you'll find me hiking, reading sci-fi
                 novels, or experimenting with new cooking recipes.
               </p>
@@ -105,10 +103,10 @@ const About = () => {
 
             {/* Skills */}
             <motion.div variants={slideUp} className="pt-4">
-              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              <h4 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-4">
                 My Skills
               </h4>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {skills.map((skill, index) => (
                   <div
                     key={index}
@@ -121,7 +119,7 @@ const About = () => {
                       {skill.items.map((item, i) => (
                         <li key={i} className="flex items-center">
                           <span className="w-1.5 h-1.5 rounded-full bg-primary-500 mr-2"></span>
-                          <span className="text-gray-600 dark:text-gray-300">
+                          <span className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                             {item}
                           </span>
                         </li>
@@ -139,53 +137,33 @@ const About = () => {
             >
               <a
                 href="#contact"
-                className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-colors"
+                className="px-5 py-2.5 text-sm sm:text-base bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-colors"
               >
                 Contact Me
               </a>
-              <button className="px-6 py-3 border border-gray-300 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-400 text-gray-700 dark:text-gray-300 font-medium rounded-lg transition-colors flex items-center">
+              <button className="px-5 py-2.5 text-sm sm:text-base border border-gray-300 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-400 text-gray-700 dark:text-gray-300 font-medium rounded-lg transition-colors flex items-center">
                 <FiDownload className="mr-2" />
                 Download CV
               </button>
             </motion.div>
 
             {/* Social Links */}
-            <motion.div variants={slideUp} className="flex gap-4 pt-4">
-              <a
-                href="#"
-                className="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
-                aria-label="GitHub"
-              >
-                <FiGithub className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <FiLinkedin className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
-                aria-label="Email"
-              >
-                <FiMail className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
-                aria-label="LeetCode"
-              >
-                <SiLeetcode className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
-                aria-label="CodePen"
-              >
-                <SiCodepen className="w-6 h-6" />
-              </a>
+            <motion.div
+              variants={slideUp}
+              className="flex flex-wrap gap-4 pt-4"
+            >
+              {[FiGithub, FiLinkedin, FiMail, SiLeetcode, SiCodepen].map(
+                (Icon, idx) => (
+                  <a
+                    key={idx}
+                    href="#"
+                    className="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
+                    aria-label="Social Link"
+                  >
+                    <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
+                  </a>
+                )
+              )}
             </motion.div>
           </motion.div>
         </div>
