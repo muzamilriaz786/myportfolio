@@ -29,60 +29,58 @@ const SkillsSection = () => {
 
   const skills = [
     {
+      icon: <FiLayers className="w-6 h-6" />,
+      title: "Full Stack Development",
+      description:
+        "Building complete web applications with both frontend and backend systems.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "react",
+        "Node.js",
+        "PHP",
+        "MongoDB",
+        "MySQL",
+      ],
+    },
+    {
       icon: <FiCode className="w-6 h-6" />,
       title: "Frontend Development",
       description:
-        "Building responsive, accessible, and performant user interfaces with React, Next.js, and modern CSS.",
-      technologies: [
-        "React",
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Framer Motion",
-      ],
+        "Creating responsive and user-friendly interfaces using modern tools and best practices.",
+      technologies: ["HTML", "CSS", "Tailwind CSS", "JavaScript","react", "EJS"],
     },
     {
       icon: <FiServer className="w-6 h-6" />,
       title: "Backend Development",
       description:
-        "Creating robust server-side applications and APIs with Node.js, Express, and various databases.",
-      technologies: ["Node.js", "Express", "NestJS", "REST API", "GraphQL"],
+        "Developing secure server-side applications, APIs, and handling database interactions.",
+      technologies: ["Node.js", "Express.js", "PHP", "REST API"],
     },
     {
       icon: <FiDatabase className="w-6 h-6" />,
       title: "Database Management",
       description:
-        "Designing and optimizing database schemas and queries for performance and scalability.",
-      technologies: ["MongoDB", "PostgreSQL", "Firebase", "Prisma", "Redis"],
-    },
-    {
-      icon: <FiLayers className="w-6 h-6" />,
-      title: "Full Stack Architecture",
-      description:
-        "Designing complete application architectures with proper separation of concerns.",
-      technologies: [
-        "Microservices",
-        "Monorepos",
-        "Docker",
-        "CI/CD",
-        "Testing",
-      ],
-    },
-    {
-      icon: <FiSmartphone className="w-6 h-6" />,
-      title: "Mobile Development",
-      description:
-        "Building cross-platform mobile applications with React Native and native technologies.",
-      technologies: ["React Native", "Expo", "iOS", "Android", "Flutter"],
+        "Working with both NoSQL and SQL databases to manage data effectively.",
+      technologies: ["MongoDB", "MySQL"],
     },
     {
       icon: <FiShield className="w-6 h-6" />,
-      title: "DevOps & Security",
+      title: "Authentication & Security",
       description:
-        "Implementing secure deployment pipelines and infrastructure as code practices.",
-      technologies: ["AWS", "Azure", "GitHub Actions", "OAuth", "JWT"],
+        "Implementing login systems, sessions, JWT, CSRF protection, and basic app security practices.",
+      technologies: ["JWT", "Sessions", "CSRF", "bcrypt","helmet"],
+    },
+    {
+      icon: <FiSmartphone className="w-6 h-6" />,
+      title: "Responsive Design",
+      description:
+        "Designing layouts that work smoothly across desktops, tablets, and mobile devices.",
+      technologies: ["Tailwind CSS", "Flexbox", "Grid", "Media Queries"],
     },
   ];
+  
 
   return (
     <section className="py-20 bg-white dark:bg-gray-900 relative overflow-hidden">

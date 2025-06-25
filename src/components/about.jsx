@@ -92,13 +92,10 @@ const About = () => {
               <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4">
                 I'm a full-stack developer with a passion for creating
                 beautiful, functional, and user-centered digital experiences.
-                With over 5 years of experience, I've worked with startups and
+                With over 2 years of experience, I've worked with startups and
                 established companies to bring their ideas to life.
               </p>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300">
-                When I'm not coding, you'll find me hiking, reading sci-fi
-                novels, or experimenting with new cooking recipes.
-              </p>
+
             </motion.div>
 
             {/* Skills */}

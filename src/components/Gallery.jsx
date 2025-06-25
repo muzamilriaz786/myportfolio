@@ -10,6 +10,11 @@ import {
 
 // Import your project images (replace with your actual image paths)
 import portfolioImg from "../assets/images/project portfolio.png";
+import blogImg from "../assets/images/screencapture-blogeagle-qrtv-vercel-app-2025-06-24-16_53_02.png";
+import youtubeImg from "../assets/images/screencapture-localhost-8020-2025-06-25-13_40_47.png";
+import TipCalImg from "../assets/images/screencapture-codepen-io-muzammilriaz786-full-MYYRMOm-2025-06-25-14_47_45 (1).png";
+import ecommerImg from "../assets/images/screencapture-localhost-5174-2025-06-25-20_11_57.png";
+
 const ProjectsSection = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -26,6 +31,67 @@ const ProjectsSection = () => {
       links: {
         code: "https://github.com/muzamilriaz786/myportfolio",
         live: "https://myportfolio-nine-rho-71.vercel.app/",
+      },
+    },
+    {
+      id: 2,
+      title: "Eagle Blog Website",
+      description:
+        "A Blog website with differnet functionalities like login, register, add post, delete post, edit post,etc",
+      tags: ["ejs", "Tailwind CSS", "particle.js", "html", "nodejs", "mongodb"],
+      category: "fullstack",
+      image: blogImg,
+      links: {
+        code: "https://github.com/zahrgul786/blogeagle",
+        live: "https://blogeagle.vercel.app/login",
+      },
+    },
+    {
+      id: 3,
+      title: "youtube Clone with studio",
+      description:
+        "A Youtube Clone with studio, having functionalities of the google account registration with user channel ",
+      tags: ["ejs", "Tailwind CSS", "html", "nodejs", "mongodb", "expressjs"],
+      category: "fullstack",
+      image: youtubeImg,
+      links: {
+        code: "https://github.com/muzamilriaz786/Youtube-Clone",
+        live: "#",
+      },
+    },
+    {
+      id: 4,
+      title: "Tip Calculator",
+      description: "Calculate your tip with ease ",
+      tags: ["html", "Tailwind CSS", "javascript", "css"],
+      category: "frontend",
+      image: TipCalImg,
+      links: {
+        code: "https://codepen.io/muzammilriaz786/pen/MYYRMOm",
+        live: "https://codepen.io/muzammilriaz786/pen/MYYRMOm",
+      },
+    },
+    {
+      id: 5,
+      title: "Perfume Ecommerce Website",
+      description:
+        "the admin panel as well as client panel with all functionalities like payment integeration through stripe",
+      tags: [
+        "html",
+        "Tailwind CSS",
+        "javascript",
+        "css",
+        "react",
+        "nodejs",
+        "expressjs",
+        "mongodb",
+        "stripe",
+      ],
+      category: "fullstack",
+      image: ecommerImg,
+      links: {
+        code: "https://github.com/muzamilriaz786/MERN-Stack-Ecommerce-Website",
+        live: "#",
       },
     },
   ];
